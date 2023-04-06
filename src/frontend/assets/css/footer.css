@@ -1,0 +1,100 @@
+.footer {
+    background-color: #f6f6f6;
+    border-top: 1px solid #ebebeb;
+    font-family: 'Roboto',sans-serif;
+    margin: 0 -12px;
+}
+.footer-top {
+    padding: 30px;
+}
+.footer-top h4 {
+    border-bottom: 1px solid #d7d7d7;
+    color: #435561;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    padding: 0 0 8px 0;
+}
+.footer-top ul {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.footer-top ul li {
+    margin: 0 0 5px 0;
+}
+
+.footer-top li a,
+.footer-top .download-app {
+    color: #555555;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.footer-top li img.google-play{
+    display: inline-block;
+    margin-top: -2px;
+    width: 18px;
+}
+
+/* Footer Legal */
+.footer .footer-legal {
+    border-top: 1px dotted #cccccc;
+    font-size: 12px;
+    padding: 15px 30px;
+}
+.footer-legal img.professional {
+    height: 28px;
+    margin-top: 5px;
+}
+.footer-legal ul li {
+    display: inline-block;
+    padding-right: 16px;
+    margin-bottom: 8px;
+    position: relative;
+}
+.footer-legal ul li:after {
+    color: #959595;
+    content: '|';
+    margin-left: 8px;
+    position: absolute;
+}
+.footer-legal ul li:last-child:after {
+    content: '';
+}
+.footer-legal a {
+    color: #555555;
+    text-decoration: none;
+    font-weight: 600;
+}
+.footer-legal a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Bottom */
+.footer .footer-bottom {
+    background-color: #ebebeb;
+    box-shadow: inset 0 10px 15px -10px #d7d7d7;
+    font-size: 12px;
+    padding: 15px 30px;
+}
+.footer-bottom img {
+    height: 26px;
+    width: auto;
+}
+.footer-bottom ul {
+    margin-top: 5px;
+}
+.footer-bottom ul li {
+    display: inline-block;
+    padding-right: 16px;
+    position: relative;
+}
+.footer-bottom a {
+    color: #555555;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.footer-bottom a:hover {
+    text-decoration: underline;
+}

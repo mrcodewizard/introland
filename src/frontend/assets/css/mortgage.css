@@ -1,0 +1,1274 @@
+.section-mortgage {
+    margin: 0 -12px;
+}
+.section-mortgage .sidebar-nav {
+    margin: 0 12px;
+}
+.section-mortgage .mortgage-outer {
+    display: flex;
+    position: relative;
+}
+.sidebar-nav .navbar.navbar-fixed-left {
+    width: 90px;
+    position: absolute;
+    border-radius: 0;
+    max-height: 100%;
+    height: 100%;
+    background: #f6f6f6;
+    z-index: 999;
+    padding-top: 25px;
+    margin-bottom: 0;
+    transition: all 0.2s ease-out;
+    box-sizing: border-box;
+}
+.sidebar-nav .navbar.navbar-fixed-left::before {
+    display: table;
+    content: " ";
+}
+.sidebar-nav ul {
+    position: static;
+    top: auto;
+    left:0;
+}
+.sidebar-nav .navbar-nav>li {
+    float: none;
+    text-align: center;
+    padding: 0;
+}
+.sidebar-nav .navbar-nav > li a {
+    font-family: 'Raleway',sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #707070;
+    cursor: pointer;
+    text-decoration: none;
+    background: none;
+    line-height: 18px;
+    padding: 10px 6px;
+}
+.sidebar-nav .navbar-nav > li a:hover {
+    text-decoration: none;
+}
+.sidebar-nav .navbar-nav > li a:not(:active):hover {
+    color: #00beee;
+    background: none;
+}
+.sidebar-nav .navbar-nav>li a span {
+    font-size: 24px;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.section-mortgage .content-divider {
+    -webkit-box-shadow: inset 0 15px 15px -10px #f7f7f7;
+    box-shadow: inset 0 15px 15px -10px #f7f7f7;
+    height: 15px;
+    margin-top: 20px;
+    position: relative;
+    border-top: 1px solid #d7d7d7;
+    width: 100%;
+}
+.section-mortgage .content-divider .gradient-left {
+    -webkit-box-shadow: inset 100px 0 30px -15px #ffffff;
+    box-shadow: inset 100px 0 30px -15px #ffffff;
+    height: 40px;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.section-mortgage .content-divider .gradient-right {
+    -webkit-box-shadow: inset -100px 0 30px -15px #ffffff;
+    box-shadow: inset -100px 0 30px -15px #ffffff;
+    height: 40px;
+    right: 0;
+    position: absolute;
+    top: 0;
+}
+
+/* Mortgage Main */
+.section-mortgage .mortgage-main{
+    padding-left: 120px;
+    width: 100%;
+}
+.mortgage-main h1 {
+    padding-top: 25px;
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+.mortgage-main .sub-heading {
+    font-size: 24px;
+    font-weight: 100;
+}
+.mortgage-main .row {
+    position: relative;
+}
+.mortgage-main h1 span.beta {
+    background: #8eafc2;
+    border-radius: 3px;
+    color: #ffffff;
+    font-family: 'Roboto',sans-serif;
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 17px;
+    padding: 3px 5px;
+    position: relative;
+    right: 3px;
+    text-transform: uppercase;
+    top: -20px;
+}
+.mortgage-main .home-selector-outer {
+    position: relative;
+}
+
+.mortgage-main .homes-select-container {
+    margin-top: 60px;
+    margin-right: 15px;
+}
+.homes-select-container .your-homes {
+    font-weight: 700;
+    color: #607b8a;
+    font-size: 16px;
+}
+.homes-select-container .homes-select {
+    border: 1px solid #d7d7d7;
+    border-radius: 2px;
+    padding: 10px 30px 10px 10px;
+    font-family: 'Roboto',sans-serif;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 500;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.homes-select-container .homes-select:after {
+    content: '';
+    position: absolute;
+    right: 12px;
+    top: 13px;
+    border: solid #29abe2;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    pointer-events: none;
+}
+
+.popup-box.choose-property-box {
+    width: 500px;
+    position: absolute;
+    right:12px;
+}
+.popup-box.fade {
+    visibility: hidden;
+    opacity: 0;
+}
+.popup-box {
+    position: absolute;
+    background: #ffffff;
+    padding: 15px 18px;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 0 20px #cccccc;
+    width: 400px;
+    z-index: 999;
+    opacity: 1;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    text-align: left;
+}
+.popup-box .close-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #29abe2;
+    font-size: 20px;
+    z-index: 10;
+    cursor: pointer;
+}
+.choose-property .box .box-content {
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0 15px;
+}
+.choose-property .box .box-content ul li {
+    border-bottom: 1px dotted #c2c2c2;
+    list-style-type: none;
+    padding: 15px 0;
+}
+.choose-property .box .box-header {
+    background: #ebebeb;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.choose-property .box .box-content ul li .radio-button {
+    float: left;
+    width: 30px;
+}
+.choose-property .box .box-content input[type="radio"] {
+    display: none;
+}
+.choose-property .box .box-content label span.radio {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #29abe2;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+}
+.choose-property .box .box-content label span.radio::before {
+    content: "";
+    position: absolute;
+    left: 0.5px;
+    top: 0.5px;
+    background: #29abe2;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    visibility: hidden;
+}
+.choose-property .box .box-content label input[type="radio"]:checked + span::before {
+    visibility: visible;
+}
+
+.choose-property .box .box-header h4 {
+    color: #2c3941;
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+}
+.choose-property .box .box-header a {
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    color: #29abe2;
+    font-weight: 600;
+    cursor: pointer;
+}
+.choose-property h3 {
+    color: #2c3941;
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-transform: none;
+}
+.choose-property .box {
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px 0 rgb(0 0 0 / 10%);
+    margin-bottom: 5px;
+    overflow-y: scroll;
+    max-height: 290px;
+}
+
+.choose-property .box .box-content ul li h5 {
+    color: #000000;
+    display: inline-block;
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    margin: 0;
+    padding-right: 8px;
+}
+.choose-property .box a{
+    color: #29abe2;
+    font-weight: 600;
+    text-decoration: none;
+}
+.choose-property .box a:hover {
+    text-decoration: underline;
+}
+.choose-property .box .box-content ul li p {
+    color: #2c3941;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+/* Edit Home Modal */
+.modal-home .form-group label,
+.modal-home .card-header h5 {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 6px 0;
+}
+.modal-home .form-group input,
+.modal-home .form-group select,
+.modal-home .card-body input,
+.modal-home .card-body select {
+    border: 1px solid #cccccc;
+    border-radius: 0;
+    box-shadow: none;
+    color: #2c3941;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    height: 40px;
+}
+.modal-home .modal-body .form-group {
+    margin-bottom: 20px;
+}
+.modal-home .modal-footer .btn {
+    padding: 14px 30px;
+    box-shadow: none;
+}
+.modal-home .btn-save {
+    background: #2d9ac4;
+    border: 1px solid #2d9ac4;
+    color: #fff;
+}
+.modal-home .btn-cancel {
+    background-color: #ffffff;
+    border-color: #cccccc;
+}
+.modal-home .add-secondary {
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+    color: #2d9ac4;;
+}
+
+
+/* Mortgage Refinancer */
+#mortgage-refinance {
+    margin: 0 0 35px;
+}
+#mortgage-refinance .inner-row {
+    display: flex;
+    align-items: center;
+}
+#mortgage-refinance h2 {
+    position: relative;
+    margin-top: 50px;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0 0 8px;
+    line-height: 1.42857143;
+}
+#mortgage-refinance .tooltip-wrapper {
+    position: relative;
+}
+#mortgage-refinance .info-icon {
+    font-size: 19px;
+    color: #818181;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+#mortgage-refinance .tooltip-body {
+    position: absolute;
+    top: -50px;
+    left: 45px;
+    background: #ffffff;
+    padding: 15px 18px;
+    border: 1px solid #d7d7d7;
+    border-radius: 8px;
+    display: inline-block;
+    box-shadow: 0 0 8px rgb(0 0 0 / 20%);
+    width: 400px;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    text-align: left;
+}
+.tooltip-wrapper .pointer {
+    position: absolute;
+    top: 40%;
+    transform: rotate(45deg);
+    left: -8px;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border: 1px solid #d7d7d7;
+    border-top: 0;
+    border-right: 0;
+}
+.tooltip-wrapper .tooltip-body .pointer:after,
+.tooltip-wrapper .tooltip-body .pointer:before {
+    position: absolute;
+    border: solid transparent;
+    content: '';
+    height: 0;
+    width: 0;
+    pointer-events: none;
+}
+
+.tooltip-body .pointer:before {
+    border-color: rgba(215, 215, 215, 0);
+    border-right-color: #d7d7d7;
+    border-width: 11px;
+    margin-top: -11px;
+}
+.tooltip-body .pointer:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #ffffff;
+    border-width: 10px;
+    margin-top: -10px;
+    left: 2px;
+}
+.tooltip-body .close-icon {
+    float: right;
+    position: relative;
+    top: -2px;
+    color: #29abe2;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#mortgage-refinance .info-heading {
+    font-size: 18px;
+    color: #2c3941;
+    margin-bottom: 10px;
+    font-weight: 800;
+    text-align: left;
+    display: block;
+    padding-right: 10px;
+}
+#mortgage-refinance .btn-add-home {
+    margin-left: 15px;
+    padding: 9px 29px;
+    background-color: #ffffff;
+    border-color: #cccccc;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* Refinance Score  */
+#refinance-score .financial-header {
+    text-align: center;
+}
+#refinance-score .financial-header img {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
+#refinance-score .financial-header h3 {
+    display: inline-block;
+    font-size: 18px;
+    margin: 0;
+    padding: 2px 0 0 10px;
+    text-transform: uppercase;
+    position: relative;
+    top: 4px;
+}
+#refinance-score .input-group {
+    position: relative;
+}
+#refinance-score .width-dynamic {
+    background: none;
+    display: inline-block;
+    font-family: 'Roboto',sans-serif;
+    font-size: 90px;
+    color: #2c3941;
+    font-weight: 800;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    border: none;
+    outline: 0;
+    padding: 0;
+    line-height: 0.82;
+}
+#refinance-score .input-group:before {
+    font-family: 'Raleway',sans-serif;
+    content: '$';
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    font-size: 45px;
+    font-weight: 300;
+    color: #2c3941;
+}
+#refinance-score .home-value .enter-home-value {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    border-bottom: 1px dashed #cccccc;
+}
+
+#refinance-score .enter-home-value .duplicate {
+    position: absolute;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 800;
+    visibility: hidden;
+    opacity: 0;
+    display: inline-block;
+}
+#refinance-score .home-value .enter-value {
+    font-family: 'Roboto',sans-serif;
+    font-size: 12px;
+    color: #7d7d7d;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#refinance-score .home-value {
+    position: relative;
+    text-align: center;
+    margin-bottom: 5px;
+}
+#refinance-score .home-value .enter-home-value {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+}
+#refinance-score .enter-home-value.total-loan-balance::before {
+    top: 0;
+    left: -25px;
+    color: #2d9ac4;
+    font-family: 'Raleway',sans-serif;
+    content: '$';
+    position: absolute;
+    top: 7px;
+    left: -25px;
+    font-size: 45px;
+    font-weight: 300;
+}
+#refinance-score .enter-home-value.total-loan-balance {
+    border-bottom: 0px;
+}
+#refinance-score .enter-home-value p {
+    font-family: 'Roboto',sans-serif;
+    font-size: 90px;
+    line-height: 100%;
+    color: #2d9ac4;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+.financial-list {
+    width: 100%;
+    padding: 0 35px;
+    overflow: hidden;
+}
+.financial-list li {
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 0;
+    display: block;
+    min-height: 45px;
+    border-bottom: 1px solid #ebebeb;
+}
+.financial-list li:last-child {
+    border-bottom: 0;
+}
+.financial-list li .finance-item-left {
+    float: left;
+    width: 60%;
+}
+.financial-list li .finance-item-right {
+    float: right;
+    width: 40%;
+    color: #4c626f;
+}
+.financial-list li span,
+.financial-list li input {
+    float: right;
+    display: inline-block;
+    font-family: 'Roboto',sans-serif;
+}
+
+.financial-list li .loan-type-display {
+    font-size: 18px;
+    font-weight: 700;
+}
+.financial-list li .loan-type-display .post-val-text {
+    font-weight: 500;
+    font-size: 12px;
+    position: relative;
+    top: 7px;
+    text-transform: uppercase;
+}
+.financial-list li .interest-rate span.perc {
+    font-size: 18px;
+}
+
+/* Loan Validation */
+.loan-validation {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.loan-validation .shadow-top {
+    -webkit-box-shadow: inset 0 3em 3em -3em #d7d7d7;
+    box-shadow: inset 0 3em 3em -3em #d7d7d7;
+    width: 100%;
+    height: 70px;
+    position: relative;
+    left: 0;
+    top: 1px;
+    opacity: 0.7;
+}
+.loan-validation .shadow-top .left-shadow {
+    width: 140px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    -webkit-box-shadow: inset 9em 0em 8em -5em #ffffff;
+    box-shadow: inset 9em 0em 8em -5em #ffffff;
+    z-index: 10;
+}
+.loan-validation .shadow-top .right-shadow {
+    width: 140px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    -webkit-box-shadow: inset 9em 0em 8em -5em #ffffff;
+    box-shadow: inset 9em 0em 8em -5em #ffffff;
+    z-index: 10;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.loan-validation .loan-warning {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    display: block;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 30px;
+}
+.loan-validation .warning-text {
+    font-weight: 700;
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    position: relative;
+    margin-top: 50px;
+    z-index: 10;
+}
+.loan-validation .loan-warning img {
+    width: 100%;
+    height: auto;
+}
+.loan-validation .shadow-bottom {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-box-shadow: inset 0 3em 3em -3em #d7d7d7;
+    box-shadow: inset 0 3em 3em -3em #d7d7d7;
+    width: 100%;
+    height: 30px;
+    position: relative;
+    left: 0;
+    top: 1px;
+    opacity: 0.7;
+}
+.loan-validation .shadow-bottom .left-shadow {
+    width: 140px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    -webkit-box-shadow: inset 9em 0em 8em -5em #ffffff;
+    box-shadow: inset 9em 0em 8em -5em #ffffff;
+    z-index: 10;
+}
+.loan-validation .shadow-bottom .right-shadow {
+    width: 140px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    -webkit-box-shadow: inset 9em 0em 8em -5em #ffffff;
+    box-shadow: inset 9em 0em 8em -5em #ffffff;
+    z-index: 10;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+/* Time To Refinance */
+section.time-to-refinance {
+    margin-top: 15px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.time-to-refinance .credit-situation-heading {
+    text-transform: none;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 20px;
+    padding-top: 15px;
+    margin: 0 0 10px;
+}
+.time-to-refinance .military-container {
+    text-align: right;
+    padding-top: 15px;
+}
+.military-container .served-military-q {
+    display: inline-block;
+    padding-right: 14px;
+}
+
+.time-to-refinance .credit-sitation-item {
+    position: relative;
+    text-align: center;
+}
+.credit-sitation-item h3 {
+    text-align: center;
+    font-weight: 300;
+    margin-top: 40px;
+    font-size: 17px;
+}
+.credit-sitation-item h3::before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+    top: 6px;
+}
+.credit-sitation-item.equity-home h3::before {
+    background: url('../img/credit-icon-home.svg') no-repeat;
+}
+.time-to-refinance .credit-situation-info {
+    text-align: center;
+    font-size: 90px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 800;
+}
+.credit-sitation-item.equity-home .credit-situation-info {
+    color: #129b49;
+    position: relative;
+}
+.credit-sitation-item.equity-home .credit-situation-info:after {
+    content: '%';
+    position: absolute;
+    display: inline;
+    font-family: 'Raleway',sans-serif;
+    top: 18px;
+    font-weight: 300;
+    font-size: 40px;
+}
+.credit-sitation-item .shadow-inner {
+    width: 50%;
+    height: 20px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top: -15px;
+    opacity: 0.7;
+}
+.available-equity-down-payment-amount {
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 800;
+    font-size: 17px;
+    color: #129b49;
+}
+.credit-sitation-item .available-equity-down-payment {
+    text-align: center;
+}
+.credit-sitation-item.debt-to-income h3:before {
+    background: url('../img/credit-icon-wheel.svg') no-repeat;
+}
+.credit-sitation-item.debt-to-income .income-warning {
+    margin: 31px 0 29px;
+    text-align: center;
+}
+.credit-sitation-item.debt-to-income .income-warning img {
+    width: 68px;
+}
+.credit-sitation-item.debt-to-income .annual-income-container {
+    position: relative;
+    width: 70%;
+    margin: auto;
+    border-bottom: 1px dashed #b5b5b5;
+    margin-top: -5px;
+}
+.credit-sitation-item.debt-to-income .annual-income-container:before {
+    content: '$';
+    font-size: 17px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    display: inline;
+}
+.credit-sitation-item.debt-to-income .width-dynamic {
+    width: 100%;
+    display: inline-block;
+    font-family: 'Roboto',sans-serif;
+    font-size: 17px;
+    line-height: 26px;
+    color: #363636;
+    font-weight: 700;
+    text-align: left;
+    margin: auto;
+    border: none;
+    outline: 0;
+    padding: 0;
+}
+.credit-sitation-item.debt-to-income .annual-income-container .duplicate {
+    opacity: 0;
+    font-family: 'Roboto',sans-serif;
+    visibility: hidden;
+    position: absolute;
+    font-size: 17px;
+    line-height: 26px;
+    color: #363636;
+    font-weight: 700;
+    text-align: left;
+    margin: auto;
+    border: none;
+    outline: 0;
+    padding: 0;
+}
+.credit-sitation-item.debt-to-income .annual-income-container:after {
+    background: url('../img/icon-edit.svg') no-repeat;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+.credit-sitation-item .annual-income {
+    font-size: 12px;
+    padding-top: 5px;
+    font-family: 'Roboto',sans-serif;
+    color: #959595;
+}
+.credit-sitation-item.debt-to-income .annual-error {
+    font-size: 12px;
+    padding-top: 5px;
+    font-family: 'Roboto',sans-serif;
+    color: #ed1c24;
+}
+
+.credit-sitation-item.credit-score h3:before {
+    background: url('../img/credit-icon-score.svg') no-repeat;
+}
+.credit-sitation-item .refresh-text {
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+    font-size: 15px;
+    padding-top: 3px;
+}
+
+.time-to-refinance .assessment-result {
+    margin: 40px auto 0;
+    position: relative;
+    width: 90%;
+    text-align: center;
+}
+.time-to-refinance .assessment-result .top {
+    -webkit-box-shadow: inset 0 20px 25px -10px #ebebeb;
+    box-shadow: inset 0 20px 25px -10px #ebebeb;
+    height: 30px;
+}
+.assessment-result .left {
+    -webkit-box-shadow: inset 20px 0 50px -10px #ffffff;
+    box-shadow: inset 20px 0 50px -10px #ffffff;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+}
+.assessment-result .great img {
+    margin-top: -25px;
+    width: 44%;
+}
+.assessment-result .great p {
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    font-weight: 600px;
+    line-height: 24px;
+    margin: -20px auto 10px;
+    width: 60%;
+}
+.great p span {
+    font-weight: 800;
+}
+.assessment-result .right {
+    -webkit-box-shadow: inset -20px 0 50px -10px #ffffff;
+    box-shadow: inset -20px 0 50px -10px #ffffff;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+}
+.assessment-result .bottom {
+    -webkit-box-shadow: inset 0 -20px 25px -10px #ebebeb;
+    box-shadow: inset 0 -20px 25px -10px #ebebeb;
+    height: 30px;
+}
+
+/* Today's rates Section */
+.todays-mortgage-rates .rates-header-text {
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 0;
+    margin-bottom: 2px;
+    font-family: 'Raleway',sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+}
+.todays-mortgage-rates .advertising-disclosure {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    padding-bottom: 25px;
+    cursor: pointer;
+    text-decoration: underline;
+    color: #008b5d;
+    font-weight: 600;
+}
+.todays-mortgage-rates .hidden-sm {
+    display: none;
+}
+
+.left-nav-container .gradient-border {
+    transition: 0.3s;
+    border-radius: 4px;
+    position: relative;
+    max-width: 190px;
+    align-self: flex-start;
+}
+
+.left-nav-container .gradient-border::after,
+.left-nav-container .gradient-border::before {
+    content: "";
+    position: absolute;
+}
+
+.left-nav-container .gradient-border::before {
+    content: "";
+    border-radius: 4px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-image:  -webkit-gradient(radial, right top, 10, 90% 0%, 150, from(#b5b5b5), to(transparent));
+    background-image: -webkit-radial-gradient(right center, 50% 100%, #b5b5b5, transparent);
+    background-image: -moz-radial-gradient(right center, center, #b5b5b5 0%, transparent 100%);
+    z-index: 0;
+}
+.left-nav-container {
+    height: 100%;
+    display: flex;
+    justify-content: left;
+}
+.left-nav-container .left-nav {
+    list-style-type: none;
+    font-family: 'Roboto',sans-serif;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    padding-left: 0;
+    list-style: none;
+}
+.left-nav-container .left-nav li {
+    position: relative;
+    z-index: 3;
+    padding: 15px 0;
+    text-align: right;
+    padding-right: 30px;
+}
+.left-nav-container .left-nav li:hover {
+    cursor: pointer;
+}
+.left-nav-container .left-nav li.active:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 100%;
+    background: #038152;
+    right: 0;
+    top: 0;
+}
+.left-nav-container .left-nav li .mortgage-type {
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #b5b5b5;
+}
+.left-nav-container .left-nav li.active .mortgage-type {
+    color: #0d5789;
+}
+.left-nav-container .left-nav li .monthly-payment {
+    color: #b5b5b5;
+    font-size: 16px;
+    font-weight: 800;
+}
+.left-nav-container .left-nav li.active .monthly-payment {
+    color: black;
+}
+.left-nav-container .left-nav li .monthly-payment:before {
+    content: '$';
+    position: relative;
+    font-size: 16px;
+    display: inline-block;
+}
+.left-nav-container .left-nav li .monthly-payment .month {
+    font-weight: 300;
+}
+.left-nav .side-dots {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 30px;
+    right: -30px;
+    z-index: 1;
+}
+.left-nav .side-dots .side-dot-row-0{
+    left: -16px;
+    top: 0px;
+}
+.left-nav-container .left-nav .side-dots .dot {
+    position: absolute;
+    background: #ccc;
+    width: 4px;
+    height: 4px;
+    border-radius: 20px;
+}
+.left-nav .side-dots .side-dot {
+    position: absolute;
+    background: #ccc;
+    width: 4px;
+    height: 4px;
+    border-radius: 20px;
+}
+.home-gear-inner .home-gear {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 24px;
+    display: block;
+}
+.home-gear-inner {
+    width: 110px;
+    height: 100%;
+    position: relative;
+    left: 15px;
+    top: 0;
+}
+.home-gear-inner .home-gear-inner-container {
+    position: relative;
+    top: -23px;
+}
+.home-gear-inner .dots-left {
+    position: absolute;
+    left: -15px;
+}
+.home-gear-inner .dot {
+    width: 4px;
+    height: 4px;
+    background: #cccccc;
+    border-radius: 30px;
+    position: absolute;
+    top: 23px;
+}
+.home-gear-inner .dots-right {
+    position: absolute;
+    left: 88px;
+}
+.home-gear-inner .dots-right .dot-0 {
+    left: 0px;
+}
+.home-gear-inner .dots-y {
+    top: -157px;
+    position: absolute;
+    right: -5px;
+}
+.home-gear-inner .dots-x-top {
+    top: -146.5px;
+    position: absolute;
+    right: 0px;
+}
+.home-gear-inner .dots-x-top .dot {
+    top: 23px;
+    right: -9px;
+}
+
+.rates-block .mortgage-type-heading {
+    font-family: 'Raleway',sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 29px;
+}
+.mortgage-type-heading.mortgage:before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background: url(../img/mortgage-type.svg) no-repeat center;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    top: 5px;
+}
+
+.rates-block .monthly-payment {
+    position: relative;
+}
+.rates-block .mortgage-type-value-heading {
+    font-family: 'Raleway',sans-serif;
+    font-size: 16px;
+    margin-top: 7px;
+    text-transform: none;
+    text-align: center;
+}
+.rates-block .mortgage-type-value {
+    font-family: 'Roboto',sans-serif;
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 55px;
+    text-align: center;
+}
+.monthly-payment .mortgage-type-value:before {
+    content: '$';
+    position: relative;
+    font-size: 32px;
+    line-height: 25px;
+    display: inline-block;
+    top: -15px;
+    left: 0px;
+    font-weight: 100;
+    font-family: 'Raleway',sans-serif;
+}
+.rates-block .value-block .shadow {
+    text-align: center;
+}
+.value-block .shadow {
+    text-align: center;
+}
+.interest-rate .mortgage-type-value:after, .rates-block .apr .mortgage-type-value:after {
+    content: '%';
+    position: absolute;
+    font-size: 35px;
+    display: inline-block;
+    top: 30px;
+    font-weight: 100;
+    font-family: 'Raleway',sans-serif;
+}
+.value-block .shadow {
+    box-shadow: none !important;
+}
+.value-block .shadow img {
+    width: 80%;
+    height: 25px;
+}
+.mortgage-type-heading.savings {
+    margin-top: 16px;
+}
+.mortgage-type-heading.savings:before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background: url('../img/icon-savings.svg') no-repeat center;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}
+
+.progress-bar-gauge .data-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.progress-bar-gauge .data-row .progressbar-container {
+    width: 75%;
+}
+.progress-bar-gauge .data-row .progress {
+    width: 100%;
+}
+.data-row .progress-bar.progress-bar-success {
+    background: #008b5d;
+}
+.data-row .progress-bar.progress-bar-danger {
+    background: #ed1c24;
+}
+.data-row p {
+    margin-bottom: 5px;
+}
+.data-row .data-amount {
+    position: relative;
+    top: 0;
+    right: 0;
+    text-align: right;
+    font-family: 'Roboto',sans-serif;
+    font-size: 45px;
+    color: #008b5d;
+    font-weight: 700;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.data-row .data-amount span {
+    display: flex;
+    align-items: center;
+}
+.data-row .data-amount span:before {
+    content: '$';
+    position: relative;
+    font-size: 22px;
+    display: inline-block;
+    top: -13px;
+    font-weight: 100;
+    font-family: 'Raleway',sans-serif;
+}
+.data-row .data-amount.red {
+    color: #ed1c24 !important;
+}
+
+/* MP Footer */
+.mp-footer {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    border-top: 1px dotted #cccccc;
+}
+.mp-footer p {
+    color: #959595;
+    font-family: 'Roboto',sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+}
+.mp-footer p span {
+    font-weight: 700;
+}
+.mp-footer p.foot-note {
+    border-top: 1px dotted #cccccc;
+    font-weight: 700;
+    margin-top: 15px;
+    padding-top: 15px;
+    position: relative;
+}
+.mp-footer p.foot-note img {
+    height: auto;
+    margin: -6px 0 0 4px;
+    position: absolute;
+    width: 72px;
+}
+
+
+/* Footer */
+.section-mortgage .footer {
+    margin: 0px 0px;
+}

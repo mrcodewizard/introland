@@ -1,0 +1,140 @@
+.sidebar {
+    background: #f6f6f6;
+    bottom: 0;
+    display: block;
+    padding: 30px 0 160px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: 300px;
+    width: 100%;
+    z-index: 1031;
+    -webkit-box-shadow: 0 0 5px rgb(0 0 0 / 15%);
+    box-shadow: 0 0 5px rgb(0 0 0 / 15%);
+}
+.sidebar .sidebar-container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 300px !important;
+    height: 70vh;
+}
+.sidebar .close-sidebar {
+    background: none;
+    border: none;
+    float: right;
+}
+
+.sidebar .close-sidebar i {
+    color: #29abe2;
+    font-size: 30px;
+    padding: 2px 30px;
+}
+
+/* Login Welcome */
+.sidebar .login-welcome {
+    padding: 0 30px 30px;
+}
+.sidebar .login-welcome .member {
+    height: 55px;
+    width: 55px;
+    background: #4c626f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+    color:#fff;
+    font-weight: 600;
+}
+
+.sidebar h4 {
+    color: #435561;
+    font-family: 'Raleway',sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 10px 30px 20px 30px;
+}
+.sidebar .login-welcome h4 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    margin: 0;
+    padding-top: 3px;
+    padding-left: 0;
+    padding-bottom: 0;
+}
+.login-welcome .member-profile-type {
+    font-family: 'Raleway',sans-serif;
+    font-size: 11px;
+    color: #2c3941;
+    font-weight: 600;
+    margin-top: 3px;
+}
+
+.login-welcome .member-profile-type a {
+    font-size: 11px;
+    color: #29abe2;
+    font-weight: 700;
+}
+.login-welcome .member-profile-type .pipe {
+    color: #b5b5b5;
+}
+.sidebar ul {
+    padding: 0;
+    border-top: 1px dotted #cccccc;
+    margin-bottom: 50px;
+}
+.sidebar ul li {
+    border-bottom: 1px dotted #cccccc;
+    padding: 6px 30px;
+}
+.sidebar a {
+    color: #555555;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+}
+.sidebar a:hover {
+    color: #555555;
+}
+.sidebar li i {
+    color: #29abe2;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 30px;
+    padding-right: 5px;
+}
+.sidebar ul.no-border {
+    border: 0 !important;
+}
+.sidebar .footer-links ul {
+    margin: 0 30px 50px 30px;
+}
+.sidebar .footer-links li {
+    border-bottom: 1px dotted #cccccc;
+    padding: 10px 30px;
+}
+.sidebar .footer-links a {
+    color: #29abe2;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+}
+
+/* Sidebar Footer */
+.sidebar .sidebar-footer-logo {
+    position: fixed;
+    bottom: 0;
+    height: 120px;
+    padding: 35px 30px;
+    left: 0;
+}
+.sidebar .sidebar-footer-logo img {
+    height: auto;
+    margin-bottom: 10px;
+    width: 120px;
+}
+.sidebar .sidebar-footer-logo p {
+    color: #000000;
+    font-size: 12px;
+}

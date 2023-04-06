@@ -1,0 +1,272 @@
+.creditcard-main .credit-top-nav li {
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    overflow: hidden;
+    flex: 0 0 16%;
+    max-width: 16%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+.creditcard-main .credit-top-nav li a {
+    color: #555555;
+    text-decoration: none;
+}
+.creditcard-main li i {
+    color: #29abe2;
+    font-size: 14px;
+}
+.credit-content h1 {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.1;
+    margin-left: -3px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.credit-content p {
+    color: #363636;
+    font-weight: normal;
+    font-family: 'Roboto',sans-serif;
+}
+.card-info {
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px rgb(0 0 0 / 5%);
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+.card-info .card-head {
+    display: flex;
+    align-items: center;
+    padding: 30px 0px;
+    padding-bottom: 30px;
+    border: 1px solid #ebebeb;
+    border-radius: 10px 10px 0px 0px;
+}
+.card-info .card-bottom {
+    background-color: #FBFBFB;
+    border: 1px solid #ebebeb;
+}
+.card-info .card-bottom .accordion-item {
+    border: none;
+}
+.card-info .card-bottom .accordion-button {
+    background-color: #FBFBFB;
+    border: none;
+    box-shadow: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #29abe2;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    position: relative;
+    z-index: 2;
+}
+.card-info .accordion-button::after {
+    flex-shrink: 0;
+    width: 1rem;
+    height: 1rem;
+    background-size: 1rem;
+}
+.card-info .accordion-button .view-detail {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.card-offer {
+    box-sizing: border-box;
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 5%);
+    border-radius: 10px;
+    padding: 30px 20px;
+    overflow: hidden;
+}
+.card-offer h3 {
+    color: #000000;
+    font-family: 'Raleway',sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 29px;
+}
+.card-offer h3 > a {
+    color: #000000;
+    font-family: 'Raleway',sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 20px;
+}
+.card-offer a>img {
+    width: 100%;
+}
+.card-info .main {
+    font-family: 'Raleway',sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #2C3941;
+}
+.card-offer .card-info .sub {
+    font-size: 20px;
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    color: #2C3941;
+}
+.card-offer .card-info .regular-apr {
+    border-left: 1px dotted #cbcbcb;
+    border-right: 1px dotted #cbcbcb;
+}
+.card-offer .btn-apply {
+    background-color: #ff7e00;
+    border-color: #ff7e00;
+    color: #ffffff;
+    padding: 9px 15%;
+    margin-bottom: 10px;
+}
+
+.features h3 {
+    color: #363636;
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.features h3::before {
+    background: url("../img/card-feature-icon.png") 0 0 no-repeat transparent;
+    content: '';
+    display: inline-block;
+    height: 26px;
+    margin-bottom: -7px;
+    margin-left: -24px;
+    margin-right: 8px;
+    padding-right: 6px;
+    width: 26px;
+}
+.features ul {
+    padding: 10px 5px;
+}
+.features ul li {
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.specifications h2 {
+    margin-top: 20px;
+    font-weight: 900;
+    font-size: 34px;
+    color: #3F5461;
+    text-align: center;
+}
+.specifications .credit-needed {
+    font-size: 14px;
+    color: #707070;
+    text-transform: uppercase;
+    text-align: center;
+}
+.specifications .credit-needed::after {
+    background: url("../img/credit-shadow.png") 50% 0 no-repeat transparent;
+    content: '';
+    display: block;
+    height: 45px;
+    margin-top: 8px;
+    width: 100%;
+}
+.specifications .task-progress .progress {
+    display: flex;          
+    justify-content: flex-end;
+}
+.specifications .task-progress .progress-bar {
+    background: #3F5461;
+    border-radius: 100px;
+}
+.specifications .divider {
+    border-top: 1px dotted rgba(0,0,0,0.2);
+    width: 100%;
+    margin-top: 50px;
+}
+.specifications .detail-row {
+    padding-top: 50px;
+}
+.specifications .main {
+    font-family: 'Raleway',sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #2C3941;
+    margin-bottom: 10px;
+}
+.specifications .value {
+    text-align: right;
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    color: #3F5461;
+    margin-bottom: 10px;
+}
+.card-bottom .apply-center {
+    display: flex;
+    justify-content: center;
+}
+.card-bottom .button-bottom .btn-apply {
+    padding: 9px 5%;
+}
+
+/* Personal Loans */
+.personal-content {
+    padding: 30px 0px;
+}
+.personal-loans .card-offer {
+    border: 0px;
+    border-radius: 0px;
+    padding: 0px;
+}
+.personal-loans .card-offer .card-info {
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px dashed #ebebeb;
+    border-radius: 0px;
+}
+.personal-loans .card-info .card-head {
+    border: 0px;
+}
+.personal-loans .card-info .card-bottom {
+    border: 0px;
+}
+.personal-loans .accordion-button .view-detail {
+    text-align: left;
+}
+.personal-loans .card-info {
+    padding: 10px 5px 0px;
+}
+.personal-loans .card-info .btn-apply {
+    padding: 10px 8px;
+    margin-bottom: 10px;
+}
+.personal-loans .card-info .features {
+    padding: 0 15px;
+}
+.personal-loans .personal-form {
+    margin-top: 10px;
+}
+.personal-loans .form-group {
+    margin-bottom: 15px;
+}
+.personal-loans .form-group label {
+    font-size: 18px;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+.personal-loans .form-group input,
+.personal-loans .form-group select {
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    height: auto;
+    padding: 12px 12px;
+    box-shadow: none;
+}
